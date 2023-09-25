@@ -17,8 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from SRO_app1 import views as v1
+from SRO_app2 import views as v2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('vista1/', v1.Vista),
+    path('vista2/', v2.Vista),
 ]
